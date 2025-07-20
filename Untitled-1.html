@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-wrapper">
+        <div class="header-controls">
+            <label for="jumpLine">Jump to Line:</label>
+            <input type="number" id="jumpLine" placeholder="Line Number">
+            <button id="jumpButton">Jump</button>
+
+            <label for="fileInput">Load File:</label>
+            <input type="file" id="fileInput" accept=".txt, .js, .html, .css">
+        </div>
+
+        <div class="editor-container">
+            <div class="line-numbers" id="lineNumbers"></div>
+            <textarea class="text-editor" id="textEditor" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
